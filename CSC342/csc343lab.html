@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Computer Organization LAB, CCNY Fall 2014</title>
+		<meta name="AUTHOR" content="Gurpreet Singh"/>
+		<meta name="KEYWORDS" content="Computer Organization, Computer Systems, Altera FPGA, Quartus, LAB"/> 
+		<meta name="DESCRIPTION" content="CCNY: Computer Organization and Computer Systems, LAB"/> 
+
+		<style type="text/css">
+			body {
+				margin-left: 200px;
+				margin-right: 200px;
+				margin-top: 20px;
+			    font: 17px "Arial", Helvetica, Arial, sans-serif; font-weight: 300;
+			    line-height: 1.5;
+			    background-color: white;
+			    color: black;
+			}
+
+			h2 {
+				font-size: 28px; 
+				font-weight: 600; 
+				text-align: center; 
+				line-height: 1.25; 
+			}
+
+			/* unvisited link */
+			a:link {
+			    color: white;
+			}
+
+			/* visited link */
+			a:visited {
+			    color: white;
+			}
+
+			/* mouse over link */
+			a:hover {
+			    color: white;
+			}
+
+			a:active { 
+				color: red; 
+			}
+
+			nav {
+				background-color: #7F7F7F;
+				border: 1px solid white;
+				border-radius: 4px;
+				box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+				color: #660064;
+				display: block;
+				overflow: hidden;
+				text-align: center;
+			}
+
+			nav ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			nav ul li {
+				display: inline-block;
+				list-style-type: none;
+
+				-webkit-transition: all 0.2s;
+				-moz-transition: all 0.2s;
+				-ms-transition: all 0.2s;
+				-o-transition: all 0.2s;
+				transition: all 0.2s; 
+			}
+
+			nav > ul > li > a {
+				display: block;
+				line-height: 50px;
+				padding: 0 24px;
+				text-decoration: none;
+			}
+
+			nav > ul > li:hover {
+				background-color: #660064;
+			}
+		    .auto-style2 {
+                height: 29px;
+                text-align: center;
+            }
+            .auto-style3 {
+                text-align: center;
+            }
+		    .auto-style4 {
+                height: 29px;
+                text-align: center;
+                width: 36px;
+            }
+            .auto-style5 {
+                text-align: center;
+                width: 36px;
+            }
+		</style>
+	</head>
+
+	<body>
+		<table border="0" width="100%" cellpadding="5" cellspacing="0">
+			<tbody>
+				<tr>
+					<td valign="TOP">
+						<h5>
+							<a href="http://www.ccny.cuny.edu">
+								<img src="CCNY_LOGO.jpg" border="0" height="130" width="150">
+							</a>
+							<br>
+						</h5>
+					</td>
+					
+					<td valign="middle" align="center">
+						<h2>
+							Computer Science 343<br>
+							Computer Architecture and Organization<br>
+							Fall 2014 LAB<br>
+						</h2>
+					</td>
+					<td valign="middle" width="25%" align="right"></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<nav>
+			<ul>
+				<li><a href="course_info.html">Course Information</a></li>
+				<li><a href="lectures.html">Lectures </a></li>
+				<li><a href="csc343lab.html">CSC 343 LAB</a></li>
+				<li><a href="tools_tech.html">Tools, Manuels and Tech.</a></li>
+			</ul>
+		</nav>
+
+		<p><center><strong><font size = 5>Computer Organization LAB.</font></strong></center>
+            </p>
+        <p><strong>Description.</strong>&nbsp; Introduction to field programmable logic devices (FPLD) technology, logic synthesis, and rapid prototyping of digital systems using commercial CAD tools. Topics: Programmable Logic Technology. Sequential Design and Hierarchy. Synthesis of Digital Hardware using VHDL. State Machine Design, CPU Controller. A Simple Processor Design. Video Graphics Adapter(VGA) video display generation. Design PS/2 Keyboard interface. Design of PS/2 Mouse interface. Synthesis of a RISC processor as covered in CSc 34200. Students are required to prepare written reports and demonstrate their design.</p>
+
+        <p><strong>LAB Coordinator.</strong> 
+            <center>
+			<table cellspacing="1" cellpadding="4" border="1">
+				<tbody>
+					<tr align:"center">
+						<th width:"120";>Name</th>
+						<th width:"120;">Office</th>
+						<th width:"120;">Office Hours</th>
+						<th width:"140;">Phone</th>
+						<th width:"160;">E-mail Address</th>
+					</tr>
+
+					<tr align:"center">
+						<td>Anthony </td>
+						<td>NAC 8-202F</td>
+						<td>M,W 4:00-5:00 PM</td>
+						<td> 212-650-6173 </td>
+						<td>csicg@cs.ccny.cuny.edu</td>
+					</tr>
+
+				</tbody>
+			</table>
+			</center>
+		
+            <p><strong>Course Outcomes.</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;
+            1. Ability to use commercial computer-aided design tools ModelSim, Quartus to design, simulate, and to perform functional and &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timing verification of digital circuits.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		    2. Ability to use and to program Field Programmable Gate Array (FPGA) devices.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		    3. Basic Knowledge of VHDL and use of Megacore libraries.<br>&nbsp;&nbsp;&nbsp;&nbsp;
+		    4. Ability to prepare, present and defend a report that demonstrates correct implementation of the design on a FPGA device.&nbsp;&nbsp;&nbsp;&nbsp;
+			</p>
+
+            <p><strong>Laboratory Projects</strong></p>
+
+        <table align="center" style="border: thin solid #000000; width: 70%; table-layout: auto;">
+            <tr>
+                <td class="auto-style4" style="background-color: #7F7F7F; color: #FFFFFF;">#</td>
+                <td class="auto-style2" style="background-color: #7F7F7F; color: #FFFFFF;">Labs</td>
+                <td class="auto-style2" style="background-color: #7F7F7F; color: #FFFFFF;">Description</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">1</td>
+                <td class="auto-style3" style="border: thin solid #000000">Design, Simulation and Testing of One-Bit Comparator</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will learn how to use the ModelSim Software and design a comparator circuit.</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">2</td>
+                <td class="auto-style3" style="border: thin solid #000000">Adders, Multiplexers</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will design an adder in both VHDL and Quartus. You will also test this design on the DE2 board.</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">3</td>
+                <td class="auto-style3" style="border: thin solid #000000">Latches and FlipFlops</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will design latches, flip-flops, and registers.</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">4</td>
+                <td class="auto-style3" style="border: thin solid #000000">Finite State machines</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will implement 3-digit BCD counter using real-time clock.</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">5</td>
+                <td class="auto-style3" style="border: thin solid #000000">Registers</td>
+                <td class="auto-style3" style="border: thin solid #000000">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">6</td>
+                <td class="auto-style3" style="border: thin solid #000000">Memory</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will use as megacore memory block to store and retrieve values.</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">7</td>
+                <td class="auto-style3" style="border: thin solid #000000">Keyboard</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will understand the ps2 communication protocol and the operation of a ps2 keyboard. </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">8</td>
+                <td class="auto-style3" style="border: thin solid #000000">VGA</td>
+                <td class="auto-style3" style="border: thin solid #000000">You will understand how video is displayed on a monitor using a VGA connection. </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">9</td>
+                <td class="auto-style3" style="border: thin solid #000000">Simple Processor </td>
+                <td class="auto-style3" style="border: thin solid #000000">You will design a simple processor.</td>
+            </tr>
+            <tr>
+                <td class="auto-style5" style="border: thin solid #000000">10</td>
+                <td class="auto-style3" style="border: thin solid #000000">Enhanced Processor</td>
+                <td class="auto-style3" style="border: thin solid #000000">&nbsp;</td>
+            </tr>
+
+        </table>
+
+
+        <p><strong>Grading Policy.</strong>&nbsp;&nbsp;To get a 100% grade in the lab All projects have to be completed + Detailed reports. Proper reporting is essential to get a 100% grade. Each report should contain the following sections: Objective, Source code, Explanations and Screen shots + Pictures of the DE-2 board with the display, Conclusions. The display should demonstrate that your design works on the board! If your report is not in a proper form and it does not prove that your design works on the board - you will get partial credit (reduced grade).</p>
+
+
+        
+    </body>
+</html>
